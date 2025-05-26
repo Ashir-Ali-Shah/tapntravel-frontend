@@ -4,11 +4,11 @@ import { busStatuses } from "../utils/bus-statuses";
 
 // Custom colors for different status types
 const COLORS = {
-  [busStatuses.UPCOMING]: "#f39c12",    // Blue for upcoming
-  [busStatuses.IN_TRANSIT]: "#ADD8E6",  // Blue for in transit
-  [busStatuses.COMPLETED]: "#FFD580",   // Orange for completed
-  [busStatuses.CANCELLED]: "#e74c3c",   // Red for cancelled
-  "default": "#FFB6C1"                  // Pink for other status
+  [busStatuses.UPCOMING]: "#f39c12",    
+  [busStatuses.IN_TRANSIT]: "#ADD8E6",  
+  [busStatuses.COMPLETED]: "#FFD580",   
+  [busStatuses.CANCELLED]: "#e74c3c",   
+  "default": "#FFB6C1"                  
 };
 
 // Human-readable labels for status codes
