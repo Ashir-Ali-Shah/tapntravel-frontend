@@ -4,7 +4,6 @@ import { analyzeBusRoutes } from "../utils/HelperFunctions";
 import { useSelector } from "react-redux";
 import Loader from "../utils/Loader";
 
-// Custom tooltip component - moved outside and before usage
 const CustomTooltip = ({ active, payload, label }) => {
   if (active && payload && payload.length) {
     return (
