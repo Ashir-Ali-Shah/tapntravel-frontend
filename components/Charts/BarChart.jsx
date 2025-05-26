@@ -28,7 +28,6 @@ const BarChart = ({ showFromCities = true, title = "Cities" }) => {
   const buses = useSelector((state) => state.buses.data);
   const isLoading = useSelector((state) => state.buses.loading);
   
-  // Local state to persist chart data
   const [chartData, setChartData] = useState(() => {
     // Try to load cached data on component initialization
     const cacheKey = `barChart_${showFromCities ? 'from' : 'to'}_cities`;
