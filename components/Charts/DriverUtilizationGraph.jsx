@@ -30,7 +30,6 @@ const DriverUtilizationGraph = ({ registeredDrivers, assignedDrivers, totalVehic
     return Math.round((asgDrivers / vehicles) * 100);
   }, [vehicles, asgDrivers]);
   
-  // Create data for absolute values graph
   const absoluteData = [
     {
       name: "Registered",
