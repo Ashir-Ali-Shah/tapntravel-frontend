@@ -14,10 +14,8 @@ export default function PaymentTrendsAnalysis() {
   useEffect(() => {
     async function processPaymentData() {
       try {
-        // Read the payment data file
         const fileContent = await window.fs.readFile('paste.txt', { encoding: 'utf8' });
         
-        // Parse the data
         const lines = fileContent.split('\n');
         let paymentData = [];
         let inPaymentTable = false;
@@ -191,7 +189,6 @@ export default function PaymentTrendsAnalysis() {
     return ranges;
   };
   
-  // Process payment status
   const processPaymentStatus = (data) => {
     const statusMap = new Map();
     
