@@ -1,0 +1,170 @@
+/* App Component Styles - Responsive */
+
+.App {
+  text-align: center;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.App-logo {
+  height: clamp(20vmin, 30vw, 40vmin);
+  width: auto;
+  pointer-events: none;
+  max-width: 100%;
+}
+
+/* Reduced motion check for animation */
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(1rem, 5vw, 2rem);
+  font-size: clamp(14px, 2.5vw, calc(10px + 2vmin));
+  color: white;
+  text-align: center;
+}
+
+.App-link {
+  color: #61dafb;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.App-link:hover {
+  color: #21b5e0;
+  text-decoration: underline;
+}
+
+/* Responsive breakpoints for App component */
+
+/* Mobile devices (up to 576px) */
+@media (max-width: 575.98px) {
+  .App-header {
+    padding: 1rem 0.5rem;
+    font-size: clamp(12px, 4vw, 16px);
+  }
+  
+  .App-logo {
+    height: 25vmin;
+    margin-bottom: 1rem;
+  }
+}
+
+/* Small devices (576px to 767.98px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .App-header {
+    padding: 1.5rem 1rem;
+    font-size: clamp(14px, 3vw, 18px);
+  }
+  
+  .App-logo {
+    height: 30vmin;
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Medium devices (768px to 991.98px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .App-header {
+    padding: 2rem 1.5rem;
+    font-size: clamp(16px, 2.5vw, 20px);
+  }
+  
+  .App-logo {
+    height: 35vmin;
+    margin-bottom: 2rem;
+  }
+}
+
+/* Large devices (992px to 1199.98px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .App-header {
+    padding: 2.5rem 2rem;
+    font-size: calc(10px + 2vmin);
+  }
+  
+  .App-logo {
+    height: 40vmin;
+    margin-bottom: 2rem;
+  }
+}
+
+/* Extra large devices (1200px and up) */
+@media (min-width: 1200px) {
+  .App-header {
+    padding: 3rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .App-logo {
+    height: 40vmin;
+    margin-bottom: 2rem;
+  }
+}
+
+/* Landscape orientation adjustments */
+@media (orientation: landscape) and (max-height: 500px) {
+  .App-header {
+    min-height: 100vh;
+    padding: 1rem;
+  }
+  
+  .App-logo {
+    height: 20vmin;
+    margin-bottom: 1rem;
+  }
+}
+
+/* High DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .App-logo {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+}
+
+/* Animation keyframes */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+  .App-logo {
+    animation: none;
+  }
+}
+
+/* Print styles */
+@media print {
+  .App {
+    color: black;
+    background: white;
+  }
+  
+  .App-header {
+    background-color: transparent;
+    color: black;
+    min-height: auto;
+  }
+  
+  .App-logo {
+    display: none;
+  }
+}

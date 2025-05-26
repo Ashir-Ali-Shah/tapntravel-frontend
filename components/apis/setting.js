@@ -1,0 +1,1 @@
+export const apiBaseUrl = "https://tap-and-travel-backend.vercel.app/api/v1";
